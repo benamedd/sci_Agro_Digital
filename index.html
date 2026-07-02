@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Agro Digital Lab | Phytopathology · Metagenomic Analyses · Independent Services</title>
+    <meta name="description" content="Independent laboratory offering phytopathology and metagenomic analysis services. Explore our Android applications and bioinformatics expertise.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="top">
+        <div class="container nav-inner">
+            <a href="#top" class="logo">
+                <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M18 6 C18 6, 10 14, 10 20 C10 24.4 13.6 28 18 28 C22.4 28 26 24.4 26 20 C26 14 18 6 18 6Z" fill="currentColor" opacity="0.15"/>
+                    <path d="M18 10 C18 10, 12 17, 12 21 C12 24.3 14.7 27 18 27 C21.3 27 24 24.3 24 21 C24 17 18 10 18 10Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                    <line x1="18" y1="12" x2="18" y2="27" stroke="currentColor" stroke-width="1"/>
+                    <line x1="12" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+            </a>
+            <nav class="main-nav">
+                <a href="#about">Laboratory</a>
+                <a href="#apps">Applications</a>
+                <a href="#analyses">Analyses</a>
+                <a href="#bioinfo">Bioinformatics</a>
+                <a href="#formation">Training</a>
+                <a href="#services">Publications</a>
+                <a href="#contact" class="btn-nav">Request a Quote</a>
+            </nav>
+            <button class="burger" aria-label="Menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-bg-grid"></div>
+        <div class="container hero-inner">
+            <div class="hero-left">
+                <div class="hero-eyebrow">
+                    <span class="dot dot-green"></span>
+                    <span> </span>
+                </div>
+                <h1>
+                    Sci-Agro Lab<br>
+                    <em>Digitalization & Agronomy</em>
+                </h1>
+                <p class="hero-lead">
+                    Senior Phytopathologist · Scientific Consultant dedicated to plant health. 
+                    Plant virologist and microbiologist offering bioinformatics and metagenomic analyses, exploration of plant viromes and microbiomes, and deployment of NGS pipelines dedicated to phytopathology.
+                </p>
+                <div class="hero-cta">
+                    <a href="#apps" class="btn-primary">Discover Applications</a>
+                    <a href="#contact" class="btn-ghost">Request a Quote</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Android Applications</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Areas of Expertise</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">NGS</span>
+                        <span class="stat-label">Metagenomics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="expertise-map">
+                    <div class="exp-node exp-center">
+                        <svg viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="20" stroke="var(--teal)" stroke-width="1.5"/>
+                            <path d="M22 8 C22 8,13 18,13 24 C13 28.9 17.1 33 22 33 C26.9 33 31 28.9 31 24 C31 18 22 8 22 8Z" fill="var(--teal)" opacity="0.2"/>
+                            <path d="M22 11 C22 11,15 20,15 25 C15 28.9 18.1 32 22 32 C25.9 32 29 28.9 29 25 C29 20 22 11 22 11Z" stroke="var(--teal)" stroke-width="1.2" fill="none"/>
+                        </svg>
+                        <span>Phytopathology</span>
+                    </div>
+                    <div class="exp-node" style="--dx:0;--dy:-1">
+                        <span class="exp-icon"></span>
+                        <span>Bacteriology</span>
+                    </div>
+                    <div class="exp-node" style="--dx:1;--dy:-0.4">
+                        <span class="exp-icon"></span>
+                        <span>Virology</span>
+                    </div>
+                    <div class="exp-node" style="--dx:1;--dy:0.6">
+                        <span class="exp-icon"></span>
+                        <span>Biostatistics</span>
+                    </div>
+                    <div class="exp-node" style="--dx:0;--dy:1">
+                        <span class="exp-icon"></span>
+                        <span>Bioinformatics</span>
+                    </div>
+                    <div class="exp-node" style="--dx:-1;--dy:0.6">
+                        <span class="exp-icon"></span>
+                        <span>Android Apps</span>
+                    </div>
+                    <div class="exp-node" style="--dx:-1;--dy:-0.4">
+                        <span class="exp-icon"></span>
+                        <span>Metagenomics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="apps" class="section-pad">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-teal">Android Applications · APK</span>
+            </div>
+            <h2 class="section-title">Three Applications Developed<br>for the Field</h2>
+            <p class="section-sub">Downloadable and installable directly on Android. Designed by a practitioner, for practitioners.</p>
+
+            <div class="apps-grid">
+                <!-- LeafDiag -->
+                <div class="app-card app-featured">
+                    <div class="app-card-top">
+                        <div class="app-badge">New</div>
+                        <div class="app-icon-wrap teal-bg">
+                            <svg viewBox="0 0 48 48" fill="none" width="40" height="40">
+                                <rect x="8" y="4" width="32" height="40" rx="4" stroke="var(--teal)" stroke-width="2"/>
+                                <circle cx="24" cy="22" r="8" stroke="var(--teal)" stroke-width="1.5"/>
+                                <path d="M20 22 C21 19, 27 19, 28 22 C29 25, 23 28, 24 22" fill="var(--teal)" opacity="0.3"/>
+                                <line x1="14" y1="36" x2="34" y2="36" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>LeafDiag</h3>
+                    <p>Determination of the <strong>severity of foliar diseases</strong> through image analysis. Automatic quantification of symptoms in real-time on Android.</p>
+                    <ul class="app-features">
+                        <li>Visual image analysis</li>
+                        <li>Severity calculation in %</li>
+                        <li>Instant results</li>
+                    </ul>
+                    <div class="app-footer">
+                        <span class="tech-tag">Android APK</span>
+                        <a href="#contact" class="btn-app">Get the app </a>
+                    </div>
+                </div>
+
+                <!-- EpiModel -->
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-icon-wrap amber-bg">
+                            <svg viewBox="0 0 48 48" fill="none" width="40" height="40">
+                                <path d="M8 36 L16 24 L22 30 L30 16 L40 28" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <circle cx="16" cy="24" r="2.5" fill="var(--amber)"/>
+                                <circle cx="30" cy="16" r="2.5" fill="var(--amber)"/>
+                                <circle cx="40" cy="28" r="2.5" fill="var(--amber)"/>
+                                <path d="M8 36 L16 24 L22 30 L30 16 L40 28 L40 36 L8 36Z" fill="var(--amber)" opacity="0.1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>EpiModel</h3>
+                    <p>Selection of the <strong>best epidemiological model</strong> for plant diseases. Curve fitting and model comparison (logistic, Gompertz, etc.).</p>
+                    <ul class="app-features">
+                        <li>Compared epidemic models</li>
+                        <li>Automatic fitting</li>
+                        <li>Curve visualization</li>
+                    </ul>
+                    <div class="app-footer">
+                        <span class="tech-tag">Android APK</span>
+                        <a href="#contact" class="btn-app">Get the app </a>
+                    </div>
+                </div>
+
+                <!-- Sprayer Calibrator -->
+                <div class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-icon-wrap blue-bg">
+                            <svg viewBox="0 0 48 48" fill="none" width="40" height="40">
+                                <circle cx="24" cy="24" r="16" stroke="var(--blue)" stroke-width="1.5"/>
+                                <circle cx="24" cy="24" r="16" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="4 2" opacity="0.4"/>
+                                <line x1="24" y1="8" x2="24" y2="40" stroke="var(--blue)" stroke-width="1.2"/>
+                                <line x1="8" y1="24" x2="40" y2="24" stroke="var(--blue)" stroke-width="1.2"/>
+                                <path d="M24 8 C28 14, 34 18, 24 24 C14 30, 20 34, 24 40" stroke="var(--blue)" stroke-width="1.2" fill="none"/>
+                                <circle cx="24" cy="24" r="3" fill="var(--blue)"/>
+                                <path d="M16 16 L32 16 L32 32" stroke="var(--blue)" stroke-width="1" stroke-dasharray="2 2" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Sprayer Calibrator</h3>
+                    <p>Precise adjustment of <strong>phytosanitary treatment parameters</strong>. Calculation of flow rates, doses, and volumes of spray according to the crop and equipment.</p>
+                    <ul class="app-features">
+                        <li>Sprayer calibration</li>
+                        <li>Flow rate / dose / volume calculation</li>
+                        <li>Adapted to local crops</li>
+                    </ul>
+                    <div class="app-footer">
+                        <span class="tech-tag">Android APK</span>
+                        <a href="#contact" class="btn-app">Get the app </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyses Section -->
+    <section id="analyses" class="section-pad bg-dark-section">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-amber">Statistics & Biometry</span>
+            </div>
+            <h2 class="section-title light">Data Analyses<br>Rigorous & Reproducible</h2>
+            <p class="section-sub light">Statistical processing compliant with international journal standards — from exploration to publication.</p>
+
+            <div class="analyses-grid">
+                <div class="analysis-block">
+                    <div class="analysis-num">01</div>
+                    <h4>Classical Statistics</h4>
+                    <p>ANOVA, post-hoc tests, t-test, non-parametric tests, regressions, correlations. Using R, SPSS, or Python.</p>
+                </div>
+                <div class="analysis-block">
+                    <div class="analysis-num">02</div>
+                    <h4>Multivariate Analyses</h4>
+                    <p>PCA, CAH, AFC, discriminant analysis. Graphical visualization of results for direct publication.</p>
+                </div>
+                <div class="analysis-block">
+                    <div class="analysis-num">03</div>
+                    <h4>Plant Epidemiology</h4>
+                    <p>Modeling of progression curves, AUDPC calculation, fitting of epidemic models (logistic, Gompertz, monomolecular).</p>
+                </div>
+                <div class="analysis-block">
+                    <div class="analysis-num">04</div>
+                    <h4>Microbial Ecology</h4>
+                    <p>Alpha/beta diversity indices, ordination, community analyses. Dedicated to phytopathology and soil ecology.</p>
+                </div>
+                <div class="analysis-block">
+                    <div class="analysis-num">05</div>
+                    <h4>Method Comparison</h4>
+                    <p>Validation protocols: Bland-Altman, ICC, concordance correlation. Essential for validating new measurement tools.</p>
+                </div>
+                <div class="analysis-block">
+                    <div class="analysis-num">06</div>
+                    <h4>Figures & Tables</h4>
+                    <p>Production of publication-ready graphs using ggplot2, matplotlib, or R base. Vector formats for submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bioinformatics Section -->
+    <section id="bioinfo" class="section-pad">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-blue">Genomics · NGS · Metagenomics</span>
+            </div>
+            <h2 class="section-title">Bioinformatics Pipelines<br>for Plant Health</h2>
+            <p class="section-sub">From raw sequencing to biological interpretation — reproducible and documented pipelines for research in phytopathology.</p>
+
+            <div class="bioinfo-layout">
+                <div class="pipeline-flow">
+                    <div class="pipe-step">
+                        <div class="pipe-icon"></div>
+                        <div class="pipe-text">
+                            <strong>Raw NGS Data</strong>
+                            <span>RNA-Seq · DNA-Seq · Amplicon</span>
+                        </div>
+                    </div>
+                    <div class="pipe-arrow"></div>
+                    <div class="pipe-step">
+                        <div class="pipe-icon"></div>
+                        <div class="pipe-text">
+                            <strong>Quality Control & Filtering</strong>
+                            <span>FastQC · Trimmomatic · fastp</span>
+                        </div>
+                    </div>
+                    <div class="pipe-arrow"></div>
+                    <div class="pipe-step">
+                        <div class="pipe-icon"></div>
+                        <div class="pipe-text">
+                            <strong>Assembly & Annotation</strong>
+                            <span>De novo · Mapping · SPAdes</span>
+                        </div>
+                    </div>
+                    <div class="pipe-arrow"></div>
+                    <div class="pipe-step">
+                        <div class="pipe-icon"></div>
+                        <div class="pipe-text">
+                            <strong>Taxonomic Analysis</strong>
+                            <span>BLAST · Kraken2 · DIAMOND</span>
+                        </div>
+                    </div>
+                    <div class="pipe-arrow"></div>
+                    <div class="pipe-step pipe-final">
+                        <div class="pipe-icon"></div>
+                        <div class="pipe-text">
+                            <strong>Results & Visualization</strong>
+                            <span>Report · Figures · Phylogeny</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bioinfo-cards">
+                    <div class="bio-card">
+                        <span class="bio-tag">Phytovirome</span>
+                        <h4>Viral Metagenomics</h4>
+                        <p>Characterization of the viral diversity of plants through high-throughput sequencing. Detection of new viruses, variants, and co-infections.</p>
+                    </div>
+                    <div class="bio-card">
+                        <span class="bio-tag">Phylogeny</span>
+                        <h4>Molecular Evolution</h4>
+                        <p>Multiple alignments (MUSCLE/MAFFT), phylogenetic trees (IQ-TREE, MEGA), recombination and population structure analyses.</p>
+                    </div>
+                    <div class="bio-card">
+                        <span class="bio-tag">Metagenomics</span>
+                        <h4>Microbial Ecology</h4>
+                        <p>Profiling of bacterial and fungal communities in soil and plant tissues. Diversity indices, ordination, LEfSe.</p>
+                    </div>
+                    <div class="bio-card">
+                        <span class="bio-tag">Variants</span>
+                        <h4>Variant Detection</h4>
+                        <p>Identification of SNVs/Indels, viral quasispecies, analysis of intra-host diversity and evolutionary dynamics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="formation" class="section-pad bg-light-green">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-teal">Teaching & Training</span>
+            </div>
+            <h2 class="section-title">Courses & Training<br>Online or In-Person</h2>
+            <p class="section-sub">Transferring practical expertise — tailored for students, PhD candidates, and agricultural professionals.</p>
+
+            <div class="formation-grid">
+                <div class="formation-card">
+                    <span class="f-num">I</span>
+                    <h4>Phytopathology</h4>
+                    <p>Identification of pathogens, epidemic cycles, integrated pest management, and crop protection.</p>
+                </div>
+                <div class="formation-card">
+                    <span class="f-num">II</span>
+                    <h4>Microbiology & Bacteriology</h4>
+                    <p>Biology of phytopathogenic bacterial agents, diagnostics, isolation, and molecular characterization.</p>
+                </div>
+                <div class="formation-card">
+                    <span class="f-num">III</span>
+                    <h4>Basics of Virology & Plant Virology</h4>
+                    <p>Structure, replication, and diversity of phytoviruses. Detection methods (ELISA, RT-PCR, sequencing).</p>
+                </div>
+                <div class="formation-card">
+                    <span class="f-num">IV</span>
+                    <h4>Applied Bioinformatics</h4>
+                    <p>Master essential bioinformatics tools applied to phytopathology: molecular identification of pathogens using BLAST, phylogenetic reconstruction (MUSCLE, MAFFT).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scientific Support Section -->
+    <section id="services" class="section-pad">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-purple">Scientific Publications</span>
+            </div>
+            <h2 class="section-title">Support for Publication<br>Maximize Your Acceptance Chances</h2>
+            <p class="section-sub">From linguistic correction to editorial strategy — enhance your chances of acceptance in international journals.</p>
+
+            <div class="services-row">
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div>
+                        <h4>Proofreading & Editing</h4>
+                        <p>Stylistic and terminological revision in phytopathology, microbiology, and agronomic sciences. Rigorous scientific English.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div>
+                        <h4>Manuscript Structuring</h4>
+                        <p>Critical reorganization, methodological coherence, presentation of results and discussion according to IMRAD standards.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"></div>
+                    <div>
+                        <h4>Response to Reviewers</h4>
+                        <p>Writing rebuttal letters, point-by-point response strategy, selection of target journals based on impact factor and field.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="badge badge-teal">Contact</span>
+                    <h3>Let's Collaborate on Your Next Project</h3>
+                    <p class="lead">Whether you're a researcher, PhD student, or agricultural business, I offer tailored services. Describe your needs via email, and I will respond within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <strong>Email Address</strong>
+                            <p><a href="mailto:sciagro.lab@gmail.com">contact@sci-agro-lab.com</a></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Availability</strong>
+                            <p>Consultations from Monday to Friday · Remote work internationally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="contact-card" id="contact-card-container">
+                    <form id="my-form" action="https://formspree.io/f/mrevgbpj" method="POST">
+                        <h4>Request a Quote</h4>
+                        
+                        <div class="form-group">
+                            <label>Your Name / Institution</label>
+                            <input type="text" name="nom_institution" placeholder=" " required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Desired Service</label>
+                            <select name="service" required>
+                                <option value="">— Choose —</option>
+                                <option value="LeafDiag (APK)">LeafDiag (APK Android)</option>
+                                <option value="EpiModel (APK)">EpiModel (APK Android)</option>
+                                <option value="Sprayer Calibrator (APK)">Sprayer Calibrator (APK Android)</option>
+                                <option value="Statistical Analysis">Statistical Analysis (R)</option>
+                                <option value="Bioinformatics Pipeline">Bioinformatics Pipeline</option>
+                                <option value="Training / Course">Training / Course</option>
+                                <option value="Manuscript Proofreading">Manuscript Proofreading</option>
+                                <option value="Other / Custom">Other / Custom</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Project Description</label>
+                            <textarea name="message" rows="4" placeholder="Briefly describe your needs, available data, and deadlines if applicable..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn-submit">Send Request </button>
+                        
+                        <p class="form-note">Response guaranteed within 24–48 business hours.</p>
+                    </form>
+
+                    <div id="success-message" style="display: none; text-align: center; padding: 40px 20px;">
+                        <div style="font-size: 3.5rem; margin-bottom: 20px;"></div>
+                        <h4 style="margin-bottom: 15px; color: var(--teal);">Thank you for your message!</h4>
+                        <p style="color: var(--text-2); line-height: 1.6; margin-bottom: 25px;">
+                            Your request for a quote has been successfully sent to the laboratory.<br>
+                            I will get back to you with a detailed proposal within 24 to 48 business hours.
+                        </p>
+                        <span class="badge badge-teal" style="display: inline-block;">Sci-Agro Digital Lab</span>
+                    </div>
+
+                    <div id="error-message" style="display: none; text-align: center; padding: 20px; color: #dc3545;">
+                         An error occurred while sending. Please check your connection or email me directly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <script>
+        const form = document.getElementById("my-form");
+        const formContainer = document.getElementById("my-form");
+        const successMessage = document.getElementById("success-message");
+        const errorMessage = document.getElementById("error-message");
+        const submitBtn = document.getElementById("submit-btn");
+
+        async function handleSubmit(event) {
+            event.preventDefault(); // Prevents redirection to the external Formspree site
+            
+            // Change button state during submission
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+
+            const data = new FormData(event.target);
+            
+            // Asynchronous data submission
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // If submission is successful: hide the form and show the success message
+                    formContainer.style.display = "none";
+                    successMessage.style.display = "block";
+                    errorMessage.style.display = "none";
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            errorMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            errorMessage.innerText = "Error during transmission. Please email me directly.";
+                        }
+                        errorMessage.style.display = "block";
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "Send Request ";
+                    });
+                }
+            }).catch(error => {
+                errorMessage.style.display = "block";
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Send Request ";
+            });
+        }
+        
+        form.addEventListener("submit", handleSubmit);
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+                <p>Scientific expertise in phytopathology,<br>agronomy, and bioinformatics.</p>
+          
+                <p>&copy; 2026 Sci-Agro Digital Lab · All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+             
