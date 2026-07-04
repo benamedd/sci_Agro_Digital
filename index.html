@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,33 @@
     <meta name="description" content="Independent laboratory offering phytopathology and metagenomic analysis services. Explore our Android applications and bioinformatics expertise.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Schema.org) for Google Search Robots -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Sci-Agro Digital Lab",
+      "description": "Independent laboratory offering phytopathology, metagenomic analysis, and agronomical software solutions.",
+      "url": "https://sci-agro-digital-lab-en.netlify.app/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Chlef",
+        "addressCountry": "DZ"
+      },
+      "knowsAbout": [
+        "Phytopathology",
+        "Plant Virology",
+        "Bioinformatics Pipelines",
+        "Metagenomics",
+        "Epidemiological Modeling",
+        "LeafDiag",
+        "EpiModel"
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -47,14 +72,14 @@
             <div class="hero-left">
                 <div class="hero-eyebrow">
                     <span class="dot dot-green"></span>
-                    <span> </span>
+                    <span>Plant Health & Digital Agronomy Experts</span>
                 </div>
                 <h1>
                     Sci-Agro Lab<br>
                     <em>Digitalization & Agronomy</em>
                 </h1>
                 <p class="hero-lead">
-                    Senior Phytopathologist · Scientific Consultant dedicated to plant health. 
+                    Senior Phytopathologists · Scientific Consultants dedicated to plant health. 
                     Plant virologist and microbiologist offering bioinformatics and metagenomic analyses, exploration of plant viromes and microbiomes, and deployment of NGS pipelines dedicated to phytopathology.
                 </p>
                 <div class="hero-cta">
@@ -217,7 +242,7 @@
                 <span class="pill pill-amber">Statistics & Biometry</span>
             </div>
             <h2 class="section-title light">Data Analyses<br>Rigorous & Reproducible</h2>
-            <p class="section-sub light">Statistical processing compliant with international journal standards — from exploration to publication.</p>
+            <p class="section-sub">Statistical processing compliant with international journal standards — from exploration to publication.</p>
 
             <div class="analyses-grid">
                 <div class="analysis-block">
@@ -408,13 +433,15 @@
                     <span class="badge badge-teal">Contact</span>
                     <h3>Let's Collaborate on Your Next Project</h3>
                     <p class="lead">Whether you're a researcher, PhD student, or agricultural business, I offer tailored services. Describe your needs via email, and I will respond within 24 hours.</p>
-                    
+                     
                     <div class="contact-details">
                         <div class="detail-item">
+                            ...
                             <strong>Email Address</strong>
                             <p><a href="mailto:sciagro.lab@gmail.com">contact@sci-agro-lab.com</a></p>
                         </div>
                         <div class="detail-item">
+                            ...
                             <strong>Availability</strong>
                             <p>Consultations from Monday to Friday · Remote work internationally.</p>
                         </div>
@@ -425,17 +452,17 @@
                 <div class="contact-card" id="contact-card-container">
                     <form id="my-form" action="https://formspree.io/f/mrevgbpj" method="POST">
                         <h4>Request a Quote</h4>
-                        
+                         
                         <div class="form-group">
                             <label>Your Name / Institution</label>
                             <input type="text" name="nom_institution" placeholder=" " required>
                         </div>
-                        
+                         
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" name="email" placeholder="you@example.com" required>
                         </div>
-                        
+                         
                         <div class="form-group">
                             <label>Desired Service</label>
                             <select name="service" required>
@@ -450,14 +477,14 @@
                                 <option value="Other / Custom">Other / Custom</option>
                             </select>
                         </div>
-                        
+                         
                         <div class="form-group">
                             <label>Project Description</label>
                             <textarea name="message" rows="4" placeholder="Briefly describe your needs, available data, and deadlines if applicable..." required></textarea>
                         </div>
-                        
+                         
                         <button type="submit" id="submit-btn" class="btn-submit">Send Request </button>
-                        
+                         
                         <p class="form-note">Response guaranteed within 24–48 business hours.</p>
                     </form>
 
@@ -488,15 +515,13 @@
         const submitBtn = document.getElementById("submit-btn");
 
         async function handleSubmit(event) {
-            event.preventDefault(); // Prevents redirection to the external Formspree site
+            event.preventDefault(); 
             
-            // Change button state during submission
             submitBtn.disabled = true;
             submitBtn.innerText = "Sending...";
 
             const data = new FormData(event.target);
             
-            // Asynchronous data submission
             fetch(event.target.action, {
                 method: form.method,
                 body: data,
@@ -505,7 +530,6 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    // If submission is successful: hide the form and show the success message
                     formContainer.style.display = "none";
                     successMessage.style.display = "block";
                     errorMessage.style.display = "none";
@@ -537,7 +561,6 @@
             <div class="footer-brand">
                 <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
                 <p>Scientific expertise in phytopathology,<br>agronomy, and bioinformatics.</p>
-          
                 <p>&copy; 2026 Sci-Agro Digital Lab · All rights reserved</p>
             </div>
         </div>
@@ -545,5 +568,3 @@
 
 </body>
 </html>
-
-             
