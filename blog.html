@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicles & Insights | Sci-Agro Digital Lab</title>
+    <meta name="description" content="Technical articles, notes on plant pathology, viral metagenomics pipelines, and digital agronomy updates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Styles spécifiques au Blog pour éviter de surcharger votre style.css principal -->
+    <style>
+        .blog-hero {
+            padding: 120px 0 60px 0;
+            background: linear-gradient(180deg, var(--bg-1) 0%, rgba(244,247,246,0.5) 100%);
+            text-align: center;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .post-card {
+            background: #ffffff;
+            border: 1px stroke var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.04);
+        }
+        .post-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+            display: flex;
+            gap: 15px;
+        }
+        .post-category {
+            color: var(--teal);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        .post-card h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .post-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .post-link {
+            font-weight: 500;
+            color: var(--text-1);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+        .post-link:hover {
+            color: var(--teal);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Identique à votre index.html pour la cohérence) -->
+    <header id="top">
+        <div class="container nav-inner">
+            <a href="index.html#top" class="logo">
+                <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M18 6 C18 6, 10 14, 10 20 C10 24.4 13.6 28 18 28 C22.4 28 26 24.4 26 20 C26 14 18 6 18 6Z" fill="currentColor" opacity="0.15"/>
+                </svg>
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#about">Laboratory</a>
+                <a href="index.html#apps">Applications</a>
+                <a href="index.html#analyses">Analyses</a>
+                <a href="index.html#bioinfo">Bioinformatics</a>
+                <a href="blog.html" class="active">Chronicles</a>
+                <a href="index.html#contact" class="btn-nav">Request a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="section-label">
+                <span class="pill pill-teal">Knowledge Hub</span>
+            </div>
+            <h1 style="font-family: 'DM Serif Display', serif; font-size: 3rem; margin-top: 15px;">The Plant Virome & Biometry Chronicles</h1>
+            <p class="section-sub" style="max-width: 600px; margin: 15px auto 0 auto;">Technical notes, methodological insights, and research updates in plant digital pathology.</p>
+        </div>
+    </section>
+
+    <!-- Articles Feed Section -->
+    <section class="section-pad" style="background: #fafafa;">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Article 1: Virome / Métagénomique -->
+                <article class="post-card">
+                    <div>
+                        <div class="post-meta">
+                            <span class="post-category">Metagenomics</span>
+                            <span>July 2026</span>
+                        </div>
+                        <h3>Demystifying the Plant Virome: High-Throughput Sequencing in Phytopathology</h3>
+                        <p class="post-excerpt">An overview of de novo assembly challenges, viral quasispecies detection, and computational workflows for mapping genomic plasticity in plant viruses.</p>
+                    </div>
+                    <a href="#" class="post-link">Read Technical Note ?</a>
+                </article>
+
+                <!-- Article 2: R / Biostatistiques -->
+                <article class="post-card">
+                    <div>
+                        <div class="post-meta">
+                            <span class="post-category">Biostatistics</span>
+                            <span>June 2026</span>
+                        </div>
+                        <h3>Evaluating Leaf Disease Severity: R Pipelines & Validation Metrics</h3>
+                        <p class="post-excerpt">How to implement reproducibility in disease quantification using Lin's Concordance Correlation Coefficient (CCC) and custom imaging algorithms.</p>
+                    </div>
+                    <a href="#" class="post-link">Read Technical Note ?</a>
+                </article>
+
+                <!-- Article 3: Applications / Field Note -->
+                <article class="post-card">
+                    <div>
+                        <div class="post-meta">
+                            <span class="post-category">Field Solutions</span>
+                            <span>June 2026</span>
+                        </div>
+                        <h3>Epidemiological Modeling in the Android Ecosystem</h3>
+                        <p class="post-excerpt">Deploying EpiModel and LeafDiag in local orchards. A practical review of software efficiency for field inspection and seed certification support.</p>
+                    </div>
+                    <a href="#" class="post-link">Read Technical Note ?</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+                <p>&copy; 2026 Sci-Agro Digital Lab · All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
