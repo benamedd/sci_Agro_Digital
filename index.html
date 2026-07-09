@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -51,11 +51,13 @@
                 <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
             </a>
             <nav class="main-nav">
-    <a href="#about">Laboratory</a>
-    <a href="#apps">Applications</a>
-    <a href="blog.html">Blog</a> <!-- Lien vers le blog -->
-    <a href="#contact" class="btn-nav">Request a Quote</a>
-</nav>
+                <a href="#about">Laboratory</a>
+                <a href="#apps">Applications</a>
+                <a href="#analyses">Biostatistics</a>
+                <a href="#bioinfo">Bioinformatics</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact" class="btn-nav">Request a Quote</a>
+            </nav>
             <button class="burger" aria-label="Menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
                 <span></span><span></span><span></span>
             </button>
@@ -90,8 +92,8 @@
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat">
-                        <span class="stat-num">5+</span>
-                        <span class="stat-label">Areas of Expertise</span>
+                        <span class="stat-num">R & Python</span>
+                        <span class="stat-label">Biostatistics</span>
                     </div>
                     <div class="stat-sep"></div>
                     <div class="stat">
@@ -353,75 +355,6 @@
         </div>
     </section>
 
-    <!-- Training Section -->
-    <section id="formation" class="section-pad bg-light-green">
-        <div class="container">
-            <div class="section-label">
-                <span class="pill pill-teal">Teaching & Training</span>
-            </div>
-            <h2 class="section-title">Courses & Training<br>Online or In-Person</h2>
-            <p class="section-sub">Transferring practical expertise — tailored for students, PhD candidates, and agricultural professionals.</p>
-
-            <div class="formation-grid">
-                <div class="formation-card">
-                    <span class="f-num">I</span>
-                    <h4>Phytopathology</h4>
-                    <p>Identification of pathogens, epidemic cycles, integrated pest management, and crop protection.</p>
-                </div>
-                <div class="formation-card">
-                    <span class="f-num">II</span>
-                    <h4>Microbiology & Bacteriology</h4>
-                    <p>Biology of phytopathogenic bacterial agents, diagnostics, isolation, and molecular characterization.</p>
-                </div>
-                <div class="formation-card">
-                    <span class="f-num">III</span>
-                    <h4>Basics of Virology & Plant Virology</h4>
-                    <p>Structure, replication, and diversity of phytoviruses. Detection methods (ELISA, RT-PCR, sequencing).</p>
-                </div>
-                <div class="formation-card">
-                    <span class="f-num">IV</span>
-                    <h4>Applied Bioinformatics</h4>
-                    <p>Master essential bioinformatics tools applied to phytopathology: molecular identification of pathogens using BLAST, phylogenetic reconstruction (MUSCLE, MAFFT).</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scientific Support Section -->
-    <section id="services" class="section-pad">
-        <div class="container">
-            <div class="section-label">
-                <span class="pill pill-purple">Scientific Publications</span>
-            </div>
-            <h2 class="section-title">Support for Publication<br>Maximize Your Acceptance Chances</h2>
-            <p class="section-sub">From linguistic correction to editorial strategy — enhance your chances of acceptance in international journals.</p>
-
-            <div class="services-row">
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div>
-                        <h4>Proofreading & Editing</h4>
-                        <p>Stylistic and terminological revision in phytopathology, microbiology, and agronomic sciences. Rigorous scientific English.</p>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div>
-                        <h4>Manuscript Structuring</h4>
-                        <p>Critical reorganization, methodological coherence, presentation of results and discussion according to IMRAD standards.</p>
-                    </div>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <div>
-                        <h4>Response to Reviewers</h4>
-                        <p>Writing rebuttal letters, point-by-point response strategy, selection of target journals based on impact factor and field.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -429,16 +362,14 @@
                 <div class="contact-info">
                     <span class="badge badge-teal">Contact</span>
                     <h3>Let's Collaborate on Your Next Project</h3>
-                    <p class="lead">Whether you're a researcher, PhD student, or agricultural business, I offer tailored services. Describe your needs via email, and I will respond within 24 hours.</p>
+                    <p class="lead">Whether you're a research institution, agronomy professional, or laboratory, I offer tailored digital and analytical services. Describe your project, and I will respond within 24 hours.</p>
                      
                     <div class="contact-details">
                         <div class="detail-item">
-                            ...
                             <strong>Email Address</strong>
-                            <p><a href="mailto:sciagro.lab@gmail.com">contact@sci-agro-lab.com</a></p>
+                            <p><a href="mailto:contact@sci-agro-lab.com">contact@sci-agro-lab.com</a></p>
                         </div>
                         <div class="detail-item">
-                            ...
                             <strong>Availability</strong>
                             <p>Consultations from Monday to Friday · Remote work internationally.</p>
                         </div>
@@ -448,7 +379,7 @@
                 <!-- Form Card -->
                 <div class="contact-card" id="contact-card-container">
                     <form id="my-form" action="https://formspree.io/f/mrevgbpj" method="POST">
-                        <h4>Request a Quote</h4>
+                        <h4>Request a Quote / Access</h4>
                          
                         <div class="form-group">
                             <label>Your Name / Institution</label>
@@ -461,23 +392,21 @@
                         </div>
                          
                         <div class="form-group">
-                            <label>Desired Service</label>
+                            <label>Desired Service / App Access</label>
                             <select name="service" required>
                                 <option value="">— Choose —</option>
-                                <option value="LeafDiag (APK)">LeafDiag (APK Android)</option>
-                                <option value="EpiModel (APK)">EpiModel (APK Android)</option>
-                                <option value="Sprayer Calibrator (APK)">Sprayer Calibrator (APK Android)</option>
-                                <option value="Statistical Analysis">Statistical Analysis (R)</option>
-                                <option value="Bioinformatics Pipeline">Bioinformatics Pipeline</option>
-                                <option value="Training / Course">Training / Course</option>
-                                <option value="Manuscript Proofreading">Manuscript Proofreading</option>
-                                <option value="Other / Custom">Other / Custom</option>
+                                <option value="LeafDiag (APK)">Request Access: LeafDiag (APK Android)</option>
+                                <option value="EpiModel (APK)">Request Access: EpiModel (APK Android)</option>
+                                <option value="Sprayer Calibrator (APK)">Request Access: Sprayer Calibrator (APK Android)</option>
+                                <option value="Statistical Analysis">Statistical Analysis (R / Python)</option>
+                                <option value="Bioinformatics Pipeline">Bioinformatics & NGS Pipeline</option>
+                                <option value="Other / Custom Technical Request">Other / Custom Technical Request</option>
                             </select>
                         </div>
                          
                         <div class="form-group">
                             <label>Project Description</label>
-                            <textarea name="message" rows="4" placeholder="Briefly describe your needs, available data, and deadlines if applicable..." required></textarea>
+                            <textarea name="message" rows="4" placeholder="Briefly describe your needs, type of data (NGS, foliar samples), or technical deadlines..." required></textarea>
                         </div>
                          
                         <button type="submit" id="submit-btn" class="btn-submit">Send Request </button>
@@ -486,11 +415,10 @@
                     </form>
 
                     <div id="success-message" style="display: none; text-align: center; padding: 40px 20px;">
-                        <div style="font-size: 3.5rem; margin-bottom: 20px;"></div>
                         <h4 style="margin-bottom: 15px; color: var(--teal);">Thank you for your message!</h4>
                         <p style="color: var(--text-2); line-height: 1.6; margin-bottom: 25px;">
-                            Your request for a quote has been successfully sent to the laboratory.<br>
-                            I will get back to you with a detailed proposal within 24 to 48 business hours.
+                            Your request has been successfully sent to the laboratory.<br>
+                            I will get back to you with a detailed technical or financial proposal within 24 to 48 business hours.
                         </p>
                         <span class="badge badge-teal" style="display: inline-block;">Sci-Agro Digital Lab</span>
                     </div>
@@ -506,7 +434,7 @@
     <!-- JavaScript Section -->
     <script>
         const form = document.getElementById("my-form");
-        const formContainer = document.getElementById("my-form");
+        const formCardContainer = document.getElementById("contact-card-container");
         const successMessage = document.getElementById("success-message");
         const errorMessage = document.getElementById("error-message");
         const submitBtn = document.getElementById("submit-btn");
@@ -527,7 +455,7 @@
                 }
             }).then(response => {
                 if (response.ok) {
-                    formContainer.style.display = "none";
+                    form.style.display = "none";
                     successMessage.style.display = "block";
                     errorMessage.style.display = "none";
                 } else {
