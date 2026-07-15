@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | Sci-Agro Digital Lab</title>
+    <meta name="description" content="Request access to Sci-Agro Digital Lab's field applications, or get a quote for statistical analysis and bioinformatics pipeline services. Response within 24-48h.">
+    <link rel="canonical" href="https://sci-agro-digital-lab-en.netlify.app/contact/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header id="top">
+        <div class="container nav-inner">
+            <a href="../" class="logo">
+                <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="17" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M18 6 C18 6, 10 14, 10 20 C10 24.4 13.6 28 18 28 C22.4 28 26 24.4 26 20 C26 14 18 6 18 6Z" fill="currentColor" opacity="0.15"/>
+                    <path d="M18 10 C18 10, 12 17, 12 21 C12 24.3 14.7 27 18 27 C21.3 27 24 24.3 24 21 C24 17 18 10 18 10Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                    <line x1="18" y1="12" x2="18" y2="27" stroke="currentColor" stroke-width="1"/>
+                    <line x1="12" y1="21" x2="24" y2="21" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+            </a>
+            <nav class="main-nav">
+                <a href="../">Laboratory</a>
+                <a href="../applications/">Applications</a>
+                <a href="../biostatistiques/">Biostatistics</a>
+                <a href="../bioinformatique/">Bioinformatics</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../contact/" class="btn-nav active">Request a Quote</a>
+            </nav>
+            <button class="burger" aria-label="Menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb"><a href="../">Laboratory</a> / Contact</div>
+            <div class="section-label"><span class="pill pill-teal">Contact</span></div>
+            <h1 class="section-title">Let's Collaborate on<br>Your Next Project</h1>
+            <p class="section-sub">Whether you're a research institution, agronomy professional, or laboratory, I offer tailored digital and analytical services. Describe your project, and I will respond within 24 hours.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <strong>Email Address</strong>
+                            <p><a href="mailto:contact@sci-agro-lab.com">contact@sci-agro-lab.com</a></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Availability</strong>
+                            <p>Consultations from Monday to Friday · Remote work internationally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card" id="contact-card-container">
+                    <form id="my-form" action="https://formspree.io/f/mrevgbpj" method="POST">
+                        <h4>Request a Quote / Access</h4>
+
+                        <div class="form-group">
+                            <label>Your Name / Institution</label>
+                            <input type="text" name="nom_institution" placeholder=" " required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Desired Service / App Access</label>
+                            <select name="service" id="service-select" required>
+                                <option value="">— Choose —</option>
+                                <option value="LeafDiag (APK)">Request Access: LeafDiag (APK Android)</option>
+                                <option value="EpiModel (APK)">Request Access: EpiModel (APK Android)</option>
+                                <option value="Sprayer Calibrator (APK)">Request Access: Sprayer Calibrator (APK Android)</option>
+                                <option value="PhytoEco-Metrics Suite (PWA/APK)">Request Access: PhytoEco-Metrics Suite (PWA / APK)</option>
+                                <option value="Statistical Analysis">Statistical Analysis (R / Python)</option>
+                                <option value="Bioinformatics Pipeline">Bioinformatics & NGS Pipeline</option>
+                                <option value="Other / Custom Technical Request">Other / Custom Technical Request</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Project Description</label>
+                            <textarea name="message" rows="4" placeholder="Briefly describe your needs, type of data (NGS, foliar samples), or technical deadlines..." required></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn-submit">Send Request </button>
+
+                        <p class="form-note">Response guaranteed within 24–48 business hours.</p>
+                    </form>
+
+                    <div id="success-message" style="display: none; text-align: center; padding: 40px 20px;">
+                        <h4 style="margin-bottom: 15px; color: var(--teal);">Thank you for your message!</h4>
+                        <p style="color: var(--text-2); line-height: 1.6; margin-bottom: 25px;">
+                            Your request has been successfully sent to the laboratory.<br>
+                            I will get back to you with a detailed technical or financial proposal within 24 to 48 business hours.
+                        </p>
+                        <span class="badge badge-teal" style="display: inline-block;">Sci-Agro Digital Lab</span>
+                    </div>
+
+                    <div id="error-message" style="display: none; text-align: center; padding: 20px; color: #dc3545;">
+                         An error occurred while sending. Please check your connection or email me directly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-text"><strong>Sci-Agro</strong> Digital Lab</span>
+                <p>Scientific expertise in phytopathology,<br>agronomy, and bioinformatics.</p>
+                <p>&copy; 2026 Sci-Agro Digital Lab · All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pre-fill the service dropdown if arriving via ?service=... from another page
+        const params = new URLSearchParams(window.location.search);
+        const preselect = params.get("service");
+        if (preselect) {
+            const select = document.getElementById("service-select");
+            const match = Array.from(select.options).find(o => o.value.toLowerCase().includes(preselect.toLowerCase()));
+            if (match) select.value = match.value;
+        }
+
+        const form = document.getElementById("my-form");
+        const successMessage = document.getElementById("success-message");
+        const errorMessage = document.getElementById("error-message");
+        const submitBtn = document.getElementById("submit-btn");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+
+            const data = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    form.style.display = "none";
+                    successMessage.style.display = "block";
+                    errorMessage.style.display = "none";
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            errorMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            errorMessage.innerText = "Error during transmission. Please email me directly.";
+                        }
+                        errorMessage.style.display = "block";
+                        submitBtn.disabled = false;
+                        submitBtn.innerText = "Send Request ";
+                    });
+                }
+            }).catch(error => {
+                errorMessage.style.display = "block";
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Send Request ";
+            });
+        }
+
+        form.addEventListener("submit", handleSubmit);
+    </script>
+</body>
+</html>
