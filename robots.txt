@@ -1,5 +1,4 @@
 User-agent: *
-
 Allow: /
 
 Sitemap: https://benamedd.github.io/sci_Agro_Digital/sitemap.xml
